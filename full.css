@@ -1,0 +1,117 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #888888;
+    font-size: .85em;
+    font-family: "Segoe UI, Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    color: #696969;
+}
+
+a:link {
+    color: #034af3;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #505abc;
+}
+
+a:hover {
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active {
+    color: #12eb87;
+}
+
+header,
+footer,
+nav,
+section {
+    display: block;
+}
+
+table {
+    width: 100%;
+}
+
+header,
+#header {
+    position: relative;
+    margin-bottom: 0px;
+    color: #000;
+    padding: 0;
+}
+
+#title {
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    font-size: 60px !important;
+    vertical-align: middle;
+    margin-left: 70px
+}
+
+#legal {
+    text-align: right;
+    color: white;
+    font-size: 14px;
+    width: 50%;
+    position: absolute;
+    top: 15px;
+    right: 10px
+}
+
+#leftHeader {
+    width: 50%;
+    vertical-align: middle;
+}
+
+section {
+    margin: 20px 20px 20px 20px;
+}
+
+#mainCanvas {
+    border: 4px solid #000000;
+}
+
+#cardsCount {
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 5px;
+    color: black;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    left: 35%;
+    right: 35%;
+    padding: 5px;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 2px 2px 2px #333333;
+}
+
+#bolasLogo {
+    width: 64px;
+    height: 64px;
+}
+
+#pictureCell {
+    float: left;
+    width: 64px;
+    margin: 5px 5px 5px 5px;
+    vertical-align: middle;
+}

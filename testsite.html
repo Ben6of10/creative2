@@ -1,0 +1,23 @@
+<html>
+<title>MTG popup</title>
+
+<head></head>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script language="Javascript">
+    function WizardsAutoCard(cardname) {
+        windowName = "WotCWindow";
+        params = "toolbar=0, location=0, directories=0, status=0, menubar=0, scrollbars=0, resizable=0, width=450, height=400";
+        win = window.open("http://www.wizards.com/magic/autocard.asp?name=" + cardname, windowName, params);
+    }
+</script>
+<script src="mtg.js"></script>
+
+<body>
+
+    <a href="javascript:WizardsAutoCard('Call of the Herd');">Call of the Herd</a>
+
+</body>
+
+
+</html>
