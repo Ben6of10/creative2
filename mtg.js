@@ -31,11 +31,6 @@ var userscript = function($) {
 
     var hoverCard = {
         selectors: function() {
-            // THIS METHOD IS NO LONGER USED AS OF v1.0.6. Added lines 56,60-72 to fix this.
-            // Chrome no longer seems to like [... i] selectors for case-insensitive matching.
-            // This makes the code a bit more clunky because I can no longer filter the
-            // selectors directly, but must match ALL hyperlink anchors and see if they match
-            // any of the MTG urls below after forcing them to lowercase.
             var urls = [
                 '://www.wizards.com/magic/autocard.asp', '://gatherer.wizards.com/Pages/Card/Details.aspx', '://gatherer.wizards.com/Pages/Search/Default.aspx', '://gatherer.wizards.com/Handlers/Image.ashx'
             ];
@@ -129,7 +124,7 @@ var userscript = function($) {
         }
     };
 
-    StackExchange.ready(function() {
+    $( document ).ready(function() {
         hoverCard.initDom();
         $('body').on('mouseenter mouseleave', 'a', function(e) {
             if (e.type == 'mouseenter') {
